@@ -1,0 +1,261 @@
+/* contact us */
+.contact {
+  padding: 50px;
+}
+
+.contact-info {
+  margin-bottom: 20px;
+}
+
+.contact-form {
+  width: 100%;
+}
+
+.contact-form form {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea,
+.contact-form input[type="submit"],
+.button,
+.contact-form select[name="volunteerRole"] {
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  width: 100%;
+}
+
+.contact-form input[type="submit"] {
+  background-color: #f3f3f3;
+  color: rgb(0, 0, 0);
+  border: none;
+  cursor: pointer;
+}
+
+.contact-form input[type="submit"]:hover {
+  background-color: #de96c1;
+}
+
+.contact-form textarea {
+  height: 150px;
+}
+
+select[name="volunteerRole"] {
+  background-color: #f8f8f8;
+}
+
+select[name="volunteerRole"] {
+  background-color: #e7e7e7;
+}
+
+select[name="volunteerRole"]:focus {
+  border-color: #b3006e;
+  color: #b3006e;
+  outline: none;
+}
+
+/* Styles for mobile */
+@media screen and (max-width: 767px) {
+
+  .contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+  }
+
+  .contact-form input[type="submit"] {
+    position: absolute;
+    bottom: 0;
+  }
+}
+
+/* Styles for tablet and desktop */
+@media screen and (min-width: 768px) {
+
+  .footer-logo {
+    display: none;
+  }
+
+  #line-foot {
+    margin-left: 19rem;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    max-width: 35rem;
+  }
+
+  #logo-img-footer {
+    max-width: 20rem;
+    padding: 1rem;
+    height: auto;
+    display: block;
+    margin-left: 48rem;
+  }
+
+  .connected {
+    padding: 3rem;
+    max-width: 40rem;
+  }
+
+  .connected h3 {
+    font-size: 2.8rem
+  }
+
+  .connected p {
+    font-size: 1.6rem;
+  }
+
+  .footer-nav {
+    display: inline-grid;
+    float: right;
+    padding: 1rem;
+  }
+
+  .footer-nav a {
+    margin: 1rem;
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: #502B23;
+  }
+
+  #copyright {
+    margin-bottom: 2rem;
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  .donate-button-footer {
+    display: block;
+    background-color: #E2C4CF;
+    padding: .75rem 1.5rem;
+    border: #4b1e1e solid 1px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    text-transform: uppercase;
+    border-radius: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+
+    &:hover {
+      background-color: #e2c4cfc0;
+    }
+  }
+
+  .site-footer {
+    background-position: center;
+    flex-wrap: wrap;
+  }
+
+  .contact {
+    background-color: #edd1c6;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  .contact-info {
+    flex: 1;
+    margin-right: 20px;
+  }
+
+  .contact-form {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+
+
+
+// socials //
+.menu-social {
+  list-style: none;
+  padding: 10px;
+  text-align: center;
+  position: relative;
+  margin-bottom: 20px;
+  border-bottom: solid #000000 5px;
+}
+
+.menu-social li {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+.menu-social li a {
+  text-decoration: none;
+  color: #000;
+}
+
+
+.menu-social li a:hover img {
+  transform: scale(1.2);
+}
+
+
+.icons {
+  width: clamp(1rem, 2.3rem, 5rem);
+  height: auto;
+  vertical-align: middle;
+
+}
+
+.copyright {
+  font-size: 1.5rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  color: #000;
+  margin-bottom: 1rem;
+}
+
+
+
+#mainMenu {
+  background-color: #333;
+}
+
+#mainMenu ul li {
+  display: inline;
+}
+
+.container.portfolio video {
+  width: 400px;
+}
+
+
+#viewproject-white {
+  width: 150px;
+  height: 200px;
+}
+
+
+#viewproject-blue {
+  width: 250px;
+  height: 150px;
+}
+
+@media (max-width: 600px) {
+  .button {
+    max-width: 5rem;
+    background-color: #1e4d27;
+    color: #fff;
+    border: none;
+    padding: 15px;
+    margin-top: 10px;
+    cursor: pointer;
+    font-weight: bold
+  }
+
+  .button:hover {
+    background-color: #163a1d
+  }
+}
