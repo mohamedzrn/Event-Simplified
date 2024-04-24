@@ -1,6 +1,100 @@
 /* Tablet Styles */
 @media only screen and (min-width: 769px) and (max-width: 1024px) {
 
-
+    *, *::before, *::after {
+        box-sizing: border-box;
+      }
+      
+      body {
+        margin: 0;
+      }
+      
+      .main-container {
+        width: 90%;
+        position: relative; /* Set container to relative positioning */
+        display: flex;
+        align-items: center; /* Align items to the top */
+        padding: 20px;
+        justify-content: flex-end;
+      }
+      
+      .text-content {
+        width: 50%; /* Set text width to 50% of the page */
+        z-index: 2; /* Ensure text content is above the image carousel */
+        max-width: 500px; /* Limit the maximum width of the text content */
+      }
+      
+      .image-carousel {
+        width: 175rem; /* Set image width to 65% of the page */
+        position: relative; /* Ensure image carousel remains in the document flow */
+      }
+      
+      .carousel {
+        max-width: 525px;
+        height: 425px;
+        position: relative;
+        left: 5rem;
+      }
+      
+      .carousel > ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+      }
+      
+      .slide {
+        position: absolute;
+        inset: 0;
+        opacity: 0;
+        transition: 200ms opacity ease-in-out;
+        transition-delay: 200ms;
+        top: 50px;
+      }
+      
+      .slide > img {
+        display: block;
+        width: 100%;
+        object-fit: cover;
+        object-position: center;
+      }
+      
+      .slide[data-active] {
+        opacity: 1;
+        z-index: 1;
+        transition-delay: 0ms;
+      }
+      
+      .carousel-button {
+        position: absolute;
+        z-index: 2;
+        background: none;
+        border: none;
+        font-size: 4rem;
+        top: 50%;
+        transform: translateY(-50%);
+        color: rgba(255, 255, 255, .5);
+        cursor: pointer;
+        border-radius: .25rem;
+        padding: 0 .5rem;
+        background-color: rgba(0, 0, 0, .1);
+      }
+      
+      .carousel-button:hover,
+      .carousel-button:focus {
+        color: white;
+        background-color: rgba(0, 0, 0, .2);
+      }
+      
+      .carousel-button:focus {
+        outline: 1px solid black;
+      }
+      
+      .carousel-button.prev {
+        left: 1rem;
+      }
+      
+      .carousel-button.next {
+        right: 1rem;
+      }
 
 }
