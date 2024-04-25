@@ -19,14 +19,15 @@
   <link rel="icon" type="image/png" sizes="16x16" href="Images/favicon-16x16.png">
 </head>
 <body>
-  <div id="main-wrapper">
+  <div id="wrapper">
+    
     <header>
       <div class="logo">
         <a href="index.html">
-          <img id="logo-img" src="assets/icons/ES-Logo-1-cropped.png" alt="Our Logo">
+          <img id="logo-img" src="assets/icons/ES-logo-1-white.png" alt="Our Logo">
         </a>
       </div>
-      <div>
+      <div class="nav-container">
         <nav>
           <a href="index.html">HOME</a>
           <a href="events.html">EVENTS</a>
@@ -37,51 +38,53 @@
       <button class="hamburger">
         <div class="bar"></div>
       </button>
-      <a href="#" class="donate-button">CONTACT US</a>
     </header>
-
+    
     <nav class="mobile-nav">
       <a href="index.html">HOME</a>
       <a href="events.html">EVENTS</a>
       <a href="#">HISTORY</a>
       <a href="about-me.html">ABOUT ME</a>
     </nav>
-
-    <section id="hero" class="hero">
+    
+    <section class="carousel-section">
       <div class="main-container">
         <div class="text-content">
-            <h1>Grow your business, establish your hand and put your customers first.</h1>
-            <nav>
-                <a href="#">SIGN UP</a>
-                <a href="#">LEARN UP</a>
-            </nav>
+          <h1>Grow your business, establish your brand, and put your customers first.</h1>
         </div>
         <div class="image-carousel">
-            <section>
-                <div class="carousel" data-carousel>
-                    <button class="carousel-button prev" data-carousel-button="prev">&#8656;</button>
-                    <button class="carousel-button next" data-carousel-button="next">&#8658;</button>
-                    <ul data-slides>
-                        <li class="slide" data-active>
-                            <img src="https://source.unsplash.com/78A265wPiO4" alt="Nature Image #1">
-                        </li>
-                        <li class="slide">
-                            <img src="https://source.unsplash.com/eOpewngf68w" alt="Nature Image #2">
-                        </li>
-                        <li class="slide">
-                            <img src="https://source.unsplash.com/ndN00KmbJ1c" alt="Nature Image #3">
-                        </li>
-                    </ul>
-                </div>
-            </section>
+          <div class="carousel" data-carousel>
+            <button class="carousel-button prev" data-carousel-button="prev">&#8656;</button>
+            <button class="carousel-button next" data-carousel-button="next">&#8658;</button>
+            <ul data-slides>
+              <li class="slide" data-active>
+                <img src="https://source.unsplash.com/78A265wPiO4" alt="Nature Image #1">
+              </li>
+              <li class="slide">
+                <img src="https://source.unsplash.com/eOpewngf68w" alt="Nature Image #2">
+              </li>
+              <li class="slide">
+                <img src="https://source.unsplash.com/ndN00KmbJ1c" alt="Nature Image #3">
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </section>
+
+    <nav class="nav-content">
+      <a href="#">SIGN UP</a>
+      <a href="#">LEARN UP</a>
+    </nav>
     
-    <main>
+    
+    <main id="main-wrapper">
       <section id="intro" class="intro">
-        <h2>WHAT WE SUPPLY FOR YOU</h2>
+        <h2 id="intro-title">WHAT WE SUPPLY FOR YOU</h2>
         <div class="intro-text">
+          <div class="intro-image1">
+            <img src="Images/who-we-are-img.png" alt="public-talk"/>
+          </div>
           <div>
             <h3>Who we are</h3>
             <p>Event Simplified is a SAAS company focused on making everyone an event management expert from day one. We focus on unblocking people through the use of powerful AI through automated task generation, suggested timelines, and day of automated change management.</p>
@@ -89,42 +92,44 @@
               <a href="#">LEARN UP</a>
             </nav>
           </div>
-          <div class="intro-image">
-            <img src="Images/who-we-are-img.png" alt="public-talk"/>
-          </div>
 
           <div>
+            <div class="intro-image2">
+              <img src="Images/our-mission-img.png" alt="public-talk-p2">
+            </div>
             <h3>Our Mission</h3>
             <p>At Event Simplified, our mission is to empower event planners and organizers with the ultimate tool for seamless event management. We aim to transform the event planning industry by eliminating the common challenges of organization and communication.</p>
             <nav>
               <a href="#">LEARN UP</a>
             </nav>
           </div>
-          <div class="intro-image">
-            <img src="Images/our-mission-img.png" alt="public-talk-p2">
-          </div>
         </div>
       </section>
 
       <section id="services" class="card-banner">
-        <h2>SERVICES</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga numquam exercitationem autem illo cum labore pariatur sed earum odit doloremque minima blanditiis nulla, excepturi perferendis voluptates velit, unde consequatur nostrum?</p>
-        <div class="grid-container">
+        <h2>Services</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+        <div class="grid-container" id="card">
           <div class="card1">
-              <h4>SERVICE 1</h4>
+              <h4>SERVICE</h4>
+              <h5>1</h5>
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
           </div>
           <div class="card2">
-              <h4>SERVICE 2</h4>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            <h4>SERVICE</h4>
+            <h5>2</h5>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
           </div>
           <div class="card3">
-              <h4>SERVICE 3</h4>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            <h4>SERVICE</h4>
+            <h5>3</h5>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
           </div>
           <div class="card4">
-              <h4>SERVICE 4</h4>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            <h4>SERVICE</h4>
+            <h5>4</h5>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
           </div>
       </div>
       </section>
@@ -136,7 +141,9 @@
           </div>
           <h2>Transforming Event Planning</h2>
           <p>Dive into the core features of Event Simplified and discover how our AI-powered platform simplifies event management, from automated task generation to real-time updates. Learn how you can start managing events like a pro with no prior experience necessary.</p>
-          <a href="#" class="button">Read More</a>
+          <nav>
+            <a href="#">LEARN UP</a>
+          </nav>
         </section>
     
         <section class="box">
@@ -145,7 +152,9 @@
           </div>
             <h2>The Future of Event Management</h2>
             <p>Explore the technological innovations behind Event Simplified, including our cloud-based microservice architecture and the synergy between our desktop and mobile applications. Understand how our technology streamlines the planning, execution, and follow-up of your events.</p>
-            <a href="#" class="button">Read More</a>
+            <nav>
+              <a href="#">LEARN UP</a>
+            </nav>
         </section>
     
         <section class="box">
@@ -154,7 +163,9 @@
           </div>
             <h2>Meeting the Challenges of Today's Event Planners</h2>
             <p>Discover how Event Simplified specifically addresses the needs of small and medium businesses and amateur sports organizations. This article outlines the common hurdles these organizers face and how our platform equips them to overcome these challenges effortlessly.</p>
-            <a href="#" class="button">Read More</a>
+            <nav>
+              <a href="#">LEARN UP</a>
+            </nav>
         </section>
       </section>
 
