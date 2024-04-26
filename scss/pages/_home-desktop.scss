@@ -9,21 +9,47 @@
       }
       
       .main-container {
-        width: 90%;
-        position: relative; /* Set container to relative positioning */
+        max-width: 90vw;
+        left: 9rem;
+        margin-right: 16rem;
+        position: relative; 
         display: flex;
-        align-items: center; /* Align items to the top */
+        align-items: center;
         padding: 20px;
         justify-content: flex-end;
       }
       
       .text-content {
-        width: 50%; /* Set text width to 50% of the page */
-        z-index: 2; /* Ensure text content is above the image carousel */
-        max-width: 500px; /* Limit the maximum width of the text content */
+        color: #fff;
+        left: 5rem;
+        width: 50%;
+        position: absolute;
+        z-index: 2; 
+        top: 7rem;
+      }
+
+      .nav-content {
+        // max-width: 90vw;
+        left: 12rem;
+        // margin-right: 16rem;
+        // position: relative;
+        // display: flex;
+        // align-items: center;
+        // padding: 20px;
+        // justify-content: flex-end;
+      }
+      
+      .nav-content a, #learn-up {
+        margin: 10px;
+        padding: 10px 20px;
+        background-color: #FF6600;
+        color: #fff;
+        text-decoration: none;
+        margin: 0 0 2rem;
       }
       
       .image-carousel {
+        z-index: 1; /* Ensure text content is above the image carousel */
         width: 65%; /* Set image width to 65% of the page */
         max-width: 65%; /* Limit the maximum width of the image carousel */
         position: relative; /* Ensure image carousel remains in the document flow */

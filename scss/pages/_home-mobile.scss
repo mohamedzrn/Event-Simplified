@@ -163,7 +163,7 @@
     margin: 0 auto;
     width: 90%;
     text-align: center;
-    padding-top: 11.5rem;
+    padding-top: 12.5rem;
   }
 
   .intro-text h3 {
@@ -186,10 +186,10 @@
   }
 
   #services p {
-    width: 90%;
+    width: 85%;
     margin: 0 auto;
     display: block;
-    font-size: 18px;
+    font-size: 20px;
     text-align: center;
     text-transform: uppercase;
   }
@@ -239,26 +239,24 @@
     justify-content: center;
     overflow: hidden;
   }
-
+  
   .box {
+    background-color: #fff;
     display: none;
     position: relative;
-    // display: flex;
     align-items: center;
     margin: 20px;
     padding: 5rem;
-    /* Adjust margin as needed */
   }
-
+  
   .box.active {
     display: block;
   }
-
+  
   .intro-content {
     flex-grow: 1;
-    /* Allow content to grow to fill available space */
   }
-
+  
   .arrow {
     display: flex;
     position: absolute;
@@ -269,14 +267,35 @@
     font-size: 24px;
     cursor: pointer;
   }
-
+  
   .prev {
     left: 0;
   }
-
+  
   .next {
     right: 0;
   }
+  
+  #arrows {
+    position: static;
+    text-align: center;
+  }
+
+  #subtitle1,
+  #subtitle2,
+  #subtitle3 {
+    color: #8E98A2;
+  }
+
+  #subtext1,
+  #subtext2,
+  #subtext3 {
+    font-size: 18px;
+    text-transform: uppercase;
+    line-height: 30px;
+  }
+  
+
 
 
   // .container {

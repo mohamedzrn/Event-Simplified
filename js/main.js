@@ -69,3 +69,16 @@ document.querySelectorAll('.prev').forEach(prevButton => {
 
 // Show the first slide initially
 showSlide(currentIndex);
+
+
+
+
+
+
+
+
+
+
+
+
+
