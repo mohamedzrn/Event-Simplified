@@ -1,4 +1,5 @@
 @media only screen and (max-width: 768px) {
+
   /* Your existing mobile CSS */
   *,
   *::before,
@@ -10,7 +11,7 @@
     margin: 0;
   }
 
-  .carousel-section{
+  .carousel-section {
     display: flex;
     height: 345px;
     overflow: hidden;
@@ -18,11 +19,13 @@
 
   .main-container {
     margin-bottom: 28rem;
-    width: 100%; /* Adjust to cover the entire width */
+    width: 100%;
+    /* Adjust to cover the entire width */
     position: relative;
     display: flex;
     align-items: center;
-    justify-content: center; /* Center horizontally */
+    justify-content: center;
+    /* Center horizontally */
   }
 
   .text-content {
@@ -30,26 +33,30 @@
     padding: 6rem;
     z-index: 2;
     max-width: 500px;
-    position: absolute; /* Position text content absolutely */
+    position: absolute;
+    /* Position text content absolutely */
     top: 70px;
     transform: translateY(-50%);
-    text-align: center; /* Center text horizontally */
+    text-align: center;
+    /* Center text horizontally */
     color: #fff;
   }
 
   .image-carousel {
     width: 90%;
     position: relative;
-    margin-top: 22rem; /* Add margin-top to create space for the navigation */
+    margin-top: 22rem;
+    /* Add margin-top to create space for the navigation */
   }
 
   .carousel {
     height: 20rem;
-    max-width: 100%; /* Set maximum width */
+    max-width: 100%;
+    /* Set maximum width */
     position: relative;
   }
 
-  .carousel > ul {
+  .carousel>ul {
     margin: 0;
     padding: 0;
     list-style: none;
@@ -64,10 +71,11 @@
     top: 0;
   }
 
-  .slide > img {
+  .slide>img {
     display: block;
     width: 100%;
-    height: auto; /* Ensure images maintain aspect ratio */
+    height: auto;
+    /* Ensure images maintain aspect ratio */
     object-fit: cover;
     object-position: center;
   }
@@ -119,14 +127,14 @@
 
   /* Position the "LEARN UP" navigation under the image carousel */
   .nav-content {
-    margin:0 0 2rem;
-    left: 85px; 
+    margin: 0 0 2rem;
+    left: 85px;
     transform: translateX(-50%);
-    text-align: center; 
+    text-align: center;
   }
 
   .nav-content a,
-  nav a{
+  nav a {
     margin: 10px;
     padding: 10px 20px;
     background-color: #FF6600;
@@ -146,12 +154,12 @@
     display: block;
   }
 
-  .intro-image1{
+  .intro-image1 {
     position: absolute;
     top: 32rem;
   }
 
-  .intro-text{
+  .intro-text {
     margin: 0 auto;
     width: 90%;
     text-align: center;
@@ -186,8 +194,8 @@
     text-transform: uppercase;
   }
 
-  #partners, 
-  #news{
+  #partners,
+  #news {
     width: 90%;
     margin: 0 auto;
   }
@@ -199,11 +207,11 @@
     font-size: 40px;
   }
 
-  #partners h2{
+  #partners h2 {
     margin-top: 8rem;
   }
 
-  #news h2{
+  #news h2 {
     margin-top: 15rem;
   }
 
@@ -217,10 +225,83 @@
     text-transform: uppercase;
   }
 
-  #partners img{
+  #partners img {
     width: 195px;
     height: auto;
     margin: 3rem auto;
     display: block;
   }
+
+
+
+  .container {
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+  }
+
+  .box {
+    display: none;
+    position: relative;
+    // display: flex;
+    align-items: center;
+    margin: 20px;
+    padding: 5rem;
+    /* Adjust margin as needed */
+  }
+
+  .box.active {
+    display: block;
+  }
+
+  .intro-content {
+    flex-grow: 1;
+    /* Allow content to grow to fill available space */
+  }
+
+  .arrow {
+    display: flex;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: transparent;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+  }
+
+  .prev {
+    left: 0;
+  }
+
+  .next {
+    right: 0;
+  }
+
+
+  // .container {
+  //   display: flex;
+  //   overflow: hidden;
+  // }
+
+  // .box {
+  //   display: none;
+  // }
+
+  // .intro-image img {
+  //   max-width: 100%;
+  // }
+
+  // .box.active {
+  //   display: block;
+  // }
+
+  // .nav {
+  //   text-align: center;
+  // }
+
+  // .nav a {
+  //   margin: 0 10px;
+  // }
+
 }
