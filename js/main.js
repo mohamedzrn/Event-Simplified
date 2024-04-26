@@ -38,3 +38,34 @@ buttons.forEach(button => {
   })
 })
 
+
+
+
+
+
+//// text-box-carousel ////
+
+const boxes = document.querySelectorAll('.box');
+let currentIndex = 0;
+
+function showSlide(index) {
+  boxes.forEach(box => box.classList.remove('active'));
+  boxes[index].classList.add('active');
+}
+
+document.querySelectorAll('.next').forEach(nextButton => {
+  nextButton.addEventListener('click', () => {
+    currentIndex = (currentIndex + 1) % boxes.length;
+    showSlide(currentIndex);
+  });
+});
+
+document.querySelectorAll('.prev').forEach(prevButton => {
+  prevButton.addEventListener('click', () => {
+    currentIndex = (currentIndex - 1 + boxes.length) % boxes.length;
+    showSlide(currentIndex);
+  });
+});
+
+// Show the first slide initially
+showSlide(currentIndex);

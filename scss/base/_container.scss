@@ -1,3 +1,4 @@
+/* Additional styles for card banner and grid container */
 .card-banner {
     display: flex;
     justify-content: center;
@@ -15,6 +16,7 @@
     width: 80%;
     box-sizing: border-box;
 }
+
 .card1,
 .card2,
 .card3,
@@ -25,7 +27,7 @@
     flex-direction: column;
     margin: 16px;
     background-color: rgb(255, 239, 210);
-    border: 5px solid  orange;
+    border: 5px solid orange;
     padding: 20px;
     text-align: center;
     width: 256px;
@@ -34,6 +36,7 @@
     font-size: 13px;
     line-height: 1.6;
 }
+
 #card h2 {
     margin: 0;
     padding: 16px 0;
@@ -51,7 +54,7 @@
     line-height: 1.6;
 }
 
-/* This is for responsive adjustments */
+/* Responsive adjustments */
 @media (max-width: 768px) {
     .grid-container {
         width: 95%;
