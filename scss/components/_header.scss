@@ -103,7 +103,7 @@ nav a {
     height: 0;
     display: none;
     z-index: 3;
-    background-color: #E2C4CF;
+    background-color: rgb(89, 143, 252);
     padding-top: 120px;
     opacity: 0;
     visibility: hidden;
@@ -125,13 +125,13 @@ nav a {
     text-align: center;
     margin-bottom: 16px;
     padding: 12px 16px;
-    background-color: #4b1e1e;
-    color: #E2C4CF;
+    background-color: #ff802c;
+    color: rgb(255, 255, 255);
 }
 
 .mobile-nav a:hover {
     color: #000;
-    background-color: #a16279;
+    background-color: #ffb27e;
     transition: background-color ease .3s, color ease .3s;
 }
 

@@ -21,22 +21,36 @@
       
       .text-content {
         color: #fff;
-        left: 5rem;
+        left: 7rem;
         width: 50%;
         position: absolute;
         z-index: 2; 
         top: 7rem;
       }
 
-      .nav-content {
+      .nav-content-learn {
         // max-width: 90vw;
-        left: 12rem;
+        left: 18rem;
         // margin-right: 16rem;
         // position: relative;
         // display: flex;
         // align-items: center;
         // padding: 20px;
         // justify-content: flex-end;
+      }
+
+      .nav-content-sign {
+        left: 16rem;
+      }
+
+      #learn-up-sign-up{
+        margin: 10px;
+        padding: 8px 20px;
+        border: 2px solid #FF6600;
+        background-color: #036;
+        color: #fff;
+        text-decoration: none;
+        margin: 0 0 2rem;
       }
       
       .nav-content a, #learn-up {
@@ -121,6 +135,202 @@
       
       .carousel-button.next {
         right: 1rem;
+      }
+
+      #intro-title {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        font-size: 35px;
+        padding: 3rem 0 6rem;
+      }
+      
+      .intro {
+        overflow: hidden; /* Clear floats */
+      }
+      
+      .intro-1 {
+        display: flex;
+        align-items: center;
+        flex-wrap: nowrap;
+        flex-direction: row-reverse;
+        justify-content: space-around;
+        padding-bottom: 10rem;
+      }
+      
+      .intro-image1 {
+        max-width: 626px;
+        float: right; /* Float the first image to the right */
+        margin-right: 2.2rem; 
+      }
+      
+      .intro-text {
+        text-align: center;
+        margin: 0 8rem;
+        width: 90%;
+        padding: 2.5rem;
+      }
+
+      #intro-box1 {
+        max-width: 510px;
+      }
+
+      #intro-box1 h3 {
+        font-size: 3rem;
+      }
+      
+      #intro-box1 p {
+        font-size: 17px;
+        text-transform: uppercase;
+        line-height: 30px;
+      }
+      
+      .intro-text h1 {
+        float: left; /* Float the text to the left */
+      }
+      
+      .intro-image1 img {
+        max-width: 100%;
+        height: auto;
+      }
+
+      .intro-2 {
+        display: flex;
+        align-items: center;
+        flex-wrap: nowrap;
+        justify-content: space-around;
+        padding-bottom: 10rem;
+      }
+      
+      .intro-image2 {
+        max-width: 626px;
+        float: left; /* Float the first image to the right */
+        margin-right: 2.2rem; 
+      }
+      
+      .intro-text {
+        display: block;
+        margin: 0 8rem;
+      }
+
+      .intro-1,
+      .intro-2{
+        text-align: left;
+      }
+
+      #intro-box2 {
+        max-width: 510px;
+      }
+
+      #intro-box2 h3 {
+        font-size: 3rem;
+      }
+      
+      #intro-box2 p {
+        font-size: 17px;
+        text-transform: uppercase;
+        line-height: 30px;
+      }
+      
+      .intro-image2 img {
+        max-width: 100%;
+        height: auto;
+      }
+
+      #services {
+        font-size: 1.5rem;
+        width: 90%;
+        margin: 0 auto;
+      }
+
+
+      .feature-container {
+        display: flex;
+        justify-content: center;
+        overflow: hidden;
+        max-width: 90%;
+        margin: 0 auto;
+      }
+      
+      .box {
+        background-color: #fff;
+        text-align: left;
+        margin: 20px;
+        padding: 5rem;
+      }
+    
+      
+      .intro-content {
+        flex-grow: 1;
+      }
+
+      .intro-image {
+        width: 380px;
+      }
+      
+      .arrow {
+        display: none;
+      }
+      
+      #subtitle1,
+      #subtitle2,
+      #subtitle3 {
+        color: #8E98A2;
+      }
+      
+      #subtext1,
+      #subtext2,
+      #subtext3 {
+        max-width: 505px;
+        font-size: 18px;
+        text-transform: uppercase;
+        line-height: 30px;
+      }
+
+      #partners,
+      #news {
+        width: 90%;
+        margin: 0 auto;
+      }
+      
+      #partners-imgs {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: wrap;
+      }
+      
+      #partners h2,
+      #news h2 {
+        display: block;
+        text-align: center;
+        font-size: 40px;
+      }
+      
+      #partners h2 {
+        margin-top: 8rem;
+      }
+      
+      #news h2 {
+        margin-top: 15rem;
+      }
+      
+      #partners p,
+      #news p {
+        width: 90%;
+        margin: 3rem auto;
+        display: block;
+        font-size: 1.8rem;
+        text-align: center;
+        text-transform: uppercase;
+      }
+      
+      #partners img {
+        width: 300px;
+        height: auto;
+        margin: 3rem auto;
+        display: block;
       }
       
 }
