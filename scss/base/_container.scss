@@ -1,6 +1,7 @@
 /* Additional styles for card banner and grid container */
 .card-banner {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;

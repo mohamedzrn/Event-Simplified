@@ -31,11 +31,11 @@
         <nav id="nav-header">
           <a href="index.html">HOME</a>
           <a href="events.html">EVENTS</a>
-          <a href="#">HISTORY</a>
+          <a href="history.html">HISTORY</a>
           <a href="about-me.html">ABOUT ME</a>
         </nav>
         <nav>
-          <a class="nav-contact-btn" href="#">CONTACT US</a>
+          <a class="nav-contact-btn" href="contact.html">CONTACT US</a>
         </nav>
       </div>
       <button class="hamburger">
@@ -46,9 +46,9 @@
     <nav class="mobile-nav">
       <a href="index.html">HOME</a>
       <a href="events.html">EVENTS</a>
-      <a href="#">HISTORY</a>
+      <a href="history.html">HISTORY</a>
       <a href="about-me.html">ABOUT ME</a>
-      <a href="#">CONTACT US</a>
+      <a href="contact.html">CONTACT US</a>
     </nav>
     
     <section class="carousel-section">
@@ -76,36 +76,45 @@
       </div>
     </section>
 
-    <nav class="nav-content">
-      <a href="#">SIGN UP</a>
+    <nav class="nav-content-sign">
+      <a id="learn-up-sign-up" href="#">SIGN UP</a>
+    </nav>
+
+    <nav class="nav-content-learn">
       <a id="learn-up" href="#">LEARN UP</a>
     </nav>
     
     
     <main id="main-wrapper">
+      
       <section id="intro" class="intro">
         <h2 id="intro-title">WHAT WE SUPPLY FOR YOU</h2>
         <div class="intro-text">
-          <div class="intro-image1">
-            <img src="Images/who-we-are-img.png" alt="public-talk"/>
-          </div>
-          <div>
-            <h3>Who we are</h3>
-            <p>Event Simplified is a SAAS company focused on making everyone an event management expert from day one. We focus on unblocking people through the use of powerful AI through automated task generation, suggested timelines, and day of automated change management.</p>
-            <nav>
-              <a id="learn-up" href="#">LEARN UP</a>
-            </nav>
+          <div class="intro-1">
+            <div class="intro-image1">
+              <img src="Images/who-we-are-img.png" alt="public-talk"/>
+            </div>
+            <div id="intro-box1">
+              <h3>Who we are</h3>
+              <p>Event Simplified is a SAAS company focused on making everyone an event management expert from day one. We focus on unblocking people through the use of powerful AI through automated task generation, suggested timelines, and day of automated change management.</p>
+              <nav>
+                <a id="learn-up" href="history.html">LEARN UP</a>
+              </nav>
+            </div>
           </div>
 
-          <div>
+
+          <div class="intro-2">
             <div class="intro-image2">
               <img src="Images/our-mission-img.png" alt="public-talk-p2">
             </div>
-            <h3>Our Mission</h3>
-            <p>At Event Simplified, our mission is to empower event planners and organizers with the ultimate tool for seamless event management. We aim to transform the event planning industry by eliminating the common challenges of organization and communication.</p>
-            <nav>
-              <a id="learn-up" href="#">LEARN UP</a>
-            </nav>
+            <div id="intro-box2">
+              <h3>Our Mission</h3>
+              <p>At Event Simplified, our mission is to empower event planners and organizers with the ultimate tool for seamless event management. We aim to transform the event planning industry by eliminating the common challenges of organization and communication.</p>
+              <nav>
+                <a id="learn-up" href="history.html">LEARN UP</a>
+              </nav>
+            </div>
           </div>
         </div>
       </section>
@@ -138,7 +147,7 @@
       </div>
       </section>
 
-      <section id="features" class="container">
+      <section id="features" class="feature-container">
         <section class="box">
           <nav id="arrows">
             <button class="arrow prev">
@@ -221,7 +230,7 @@
           <h2>NEWS</h2>
           <p>Click here to explore our News page and discover how Event Simplified is continually revolutionizing the way events are planned and executed!</p>
           <nav>
-            <a id="learn-up" href="#">LEARN UP</a>
+            <a id="learn-up" href="events.html">LEARN UP</a>
           </nav>
         </div>
       </section>
@@ -285,10 +294,10 @@
                             <h3>Useful Links</h3>
                         </div>
                           <ul>
-                              <li><a href="#">HOME</a></li>
-                              <li><a href="#">EVENTS</a></li>
-                              <li><a href="#">HISTORY</a></li>
-                              <li><a href="#">ABOUT ME</a></li>
+                              <li><a href="index.html">HOME</a></li>
+                              <li><a href="events.html">EVENTS</a></li>
+                              <li><a href="history.html">HISTORY</a></li>
+                              <li><a href="about-me.html">ABOUT ME</a></li>
                           </ul>
                       </div>
                   </div>
@@ -322,10 +331,10 @@
                   <div class="col-xl-6 col-lg-6 d-none d-lg-block text-right">
                       <div class="footer-menu">
                           <ul>
-                            <li><a href="#">HOME</a></li>
-                            <li><a href="#">EVENTS</a></li>
-                            <li><a href="#">HISTORY</a></li>
-                            <li><a href="#">ABOUT ME</a></li>
+                            <li><a href="index.html">HOME</a></li>
+                            <li><a href="events.html">EVENTS</a></li>
+                            <li><a href="history.html">HISTORY</a></li>
+                            <li><a href="about-me.html">ABOUT ME</a></li>
                           </ul>
                       </div>
                   </div>
@@ -333,87 +342,6 @@
           </div>
       </div>
   </footer>
-
-
-    <!-- <footer class="site-footer">
-      <div class="connected">
-        <h3>Stay Connected</h3>
-        <p>Join our community and stay in the loop with the latest updates, and exciting news! Simply fill out the form below to subscribe to our newsletter and be part of our vibrant community.</p>
-        <h4>EMAIL: INFO@EVENSIMPLIFIED</h4>
-        <h4>EVENT SIMPLIFIED</h4>
-      </div>
-      <div class="footer-logo">
-        <img id="logo-img-footer" src="./assets/icons/66-logo.svg">
-      </div>
-
-      <div id="app" class="contact-form">
-        <p class="form-key">Please fill the form <span class="required"></span></p>
-        <form @submit.prevent="submitForm" id="contactForm">
-          <label for="firstName">First Name: <span class="required"></span></label>
-          <input type="text" id="firstName" v-model="formData.firstName">
-
-          <label for="lastName">Last Name: <span class="required"></span></label>
-          <input type="text" id="lastName" v-model="formData.lastName">
-
-          <label for="email">Email: <span class="required"></span></label>
-          <input type="email" id="email" v-model="formData.email">
-
-          <label for="testAnswer">What is 4+4 (Type the number) <span class="required"></span></label>
-          <input type="text" id="testAnswer" v-model="formData.testAnswer">
-
-          <label for="message">Message: <span class="required"></span></label>
-          <textarea id="message" v-model="formData.message"></textarea>
-
-          <input type="text" id="honeypot" v-model="formData.honeypot">
-
-          <button :class="{ 'button__circle': submitted, 'button': true }" type="submit">
-            <div class="container">
-              <span class="tick" v-html="buttonText">Submit</span>
-            </div>
-          </button>
-
-          <ul v-if="errors">
-            <li v-for="error in errors">{{error}}</li>
-          </ul>
-          <div v-if="responseMessage">
-            {{ responseMessage }}
-          </div>
-        </form>
-      </div>
-
-      <section class="grid-con">
-        <h2 class="hidden">Footer</h2>
-        <div id="line-foot" class="col-span-4 m-col-span-12 l-col-span-12 xl-col-span-12">
-          <ul class="menu-social">
-            <li>
-              <a href="https://twitter.com/FanshaweCollege?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor">
-                <img class="icons" src="Images/twitter.svg" alt="twitter">
-              </a>
-            </li>
-            <li>
-              <a href="https://www.facebook.com/FanshaweCollege/">
-                <img class="icons" src="Images/facebook.svg" alt="facebook">
-              </a>
-            </li>
-            <li>
-              <a href="https://www.youtube.com/@Fanshawe-College">
-                <img class="icons" src="Images/youtube.svg" alt="youtube">
-              </a>
-            </li>
-            <li>
-              <a href="https://www.instagram.com/fanshawecollege/?hl=en">
-                <img class="icons" src="Images/instagram.svg" alt="instagram">
-              </a>
-            </li>
-            <li>
-              <a href="https://www.linkedin.com/school/fanshawe-college/?originalSubdomain=ca">
-                <img class="icons" src="Images/linkedin-in.svg" alt="Linkedin">
-              </a>
-            </li>
-          </ul>
-        </div>
-      </section>
-    </footer> -->
     
     <script src="https://kit.fontawesome.com/82048953c6.js" crossorigin="anonymous"></script>
     <script src="js/main.js"></script>

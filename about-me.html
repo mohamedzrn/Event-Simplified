@@ -3,55 +3,57 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Event-Simplified -- About</title>
+  <title>Event-Simplified -- About Me</title>
   <link rel="stylesheet" href="css/reset.css" />
   <link rel="stylesheet" href="css/grid.css" />
   <link rel="stylesheet" href="css/main.css" />
-  <script type="module" src="js/main.js"></script>
-
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollToPlugin.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/TextPlugin.min.js"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="Images/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="Images/favicon-16x16.png">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
 </head>
 
 <body>
-  <div id="main-wrapper">
+  <div id="wrapper">
     <header>
       <div class="logo">
         <a href="index.html">
-          <img id="logo-img" src="assets/icons/ES-Logo-1-cropped.png" alt="Our Logo">
+          <img id="logo-img" src="assets/icons/ES-logo-1-white.png" alt="Our Logo">
         </a>
       </div>
-      <div class="container">
-        <nav>
+      <div class="nav-container">
+        <nav id="nav-header">
           <a href="index.html">HOME</a>
           <a href="events.html">EVENTS</a>
-          <a href="#">HISTORY</a>
+          <a href="history.html">HISTORY</a>
           <a href="about-me.html">ABOUT ME</a>
+        </nav>
+        <nav>
+          <a class="nav-contact-btn" href="contact.html">CONTACT US</a>
         </nav>
       </div>
       <button class="hamburger">
         <div class="bar"></div>
       </button>
-      <a href="#" class="donate-button">CONTACT US</a>
     </header>
-
+    
     <nav class="mobile-nav">
       <a href="index.html">HOME</a>
       <a href="events.html">EVENTS</a>
-      <a href="#">HISTORY</a>
+      <a href="history.html">HISTORY</a>
       <a href="about-me.html">ABOUT ME</a>
+      <a href="contact.html">CONTACT US</a>
     </nav>
 
     <section class="hero">
       <div class="image-container">
-        <img id="header-img" src="Images/williamsanto_ai.png" alt="Image Carousel">
+        <img id="header-img" src="Images/Head_Shot_Small.png" alt="Image Carousel">
       </div>
       <div class="content">
         <h1>Welcome!</h1>
@@ -61,129 +63,159 @@
       </div>
     </section>
 
-  <main>
-    <section>
-      <div class="about-me-1">
-        <p>I've been passionate about event planning since I was 10, starting with small family gatherings where I coordinated games and decorations. This early interest blossomed as I took on larger roles, organizing school functions and community events. Through years of experience, I've developed a knack for handling everything from venue selection to budget management. Each event presents a new challenge and a canvas for creativity, from corporate gatherings to personal celebrations. My goal is to create memorable experiences that bring people joy and celebration.
-        </p>
-        <div class="about-image-1">
-          <img id="" src="Images/williamsanto_ai.png" alt="Pic of William Santo" />
+  <main id="main-wrapper">
+ 
+    <section id="intro" class="intro">
+      <section>
+        <div class="about-me-1">
+          <p>I've been passionate about event planning since I was 10, starting with small family gatherings where I coordinated games and decorations. This early interest blossomed as I took on larger roles, organizing school functions and community events. Through years of experience, I've developed a knack for handling everything from venue selection to budget management. Each event presents a new challenge and a canvas for creativity, from corporate gatherings to personal celebrations. My goal is to create memorable experiences that bring people joy and celebration.
+          </p>
+          <div class="about-image-1">
+            <img id="" src="Images/williamsanto_ai-large.png" alt="Pic of William Santo"/>
+          </div>
         </div>
-      </div>
-    </section>
-
-    <section>
-      <div class="about-me-1">
-        <div class="about-image-1">
-          <img id="" src="Images/studio-talk.png" alt="Pic of William Santo" />
+      </section>
+      
+      <section>
+        <div class="about-me-2">
+          <div class="about-image-2">
+            <img id="" src="Images/studio-talk.png" alt="Pic of William Santo" />
+          </div>
+          <p>I specialize in organizing corporate events, not-for-profit initiatives, and amateur sports competitions. My expertise spans logistics, venue selection, and participant engagement, ensuring each event meets its unique goals. Whether it's a formal corporate function, a charity fundraiser, or a community sports tournament, I handle every detail meticulously. This diverse experience equips me to manage events effectively, adapting to different scales and requirements. My aim is always to create an impactful, memorable experience for all participants.
+          </p>
         </div>
-        <p>I've been passionate about event planning since I was 10, starting with small family gatherings where I coordinated games and decorations. This early interest blossomed as I took on larger roles, organizing school functions and community events. Through years of experience, I've developed a knack for handling everything from venue selection to budget management. Each event presents a new challenge and a canvas for creativity, from corporate gatherings to personal celebrations. My goal is to create memorable experiences that bring people joy and celebration.
-        </p>
-      </div>
-    </section>
-
-    <section>
-      <div class="about-me-1">
-        <p>I've been passionate about event planning since I was 10, starting with small family gatherings where I coordinated games and decorations. This early interest blossomed as I took on larger roles, organizing school functions and community events. Through years of experience, I've developed a knack for handling everything from venue selection to budget management. Each event presents a new challenge and a canvas for creativity, from corporate gatherings to personal celebrations. My goal is to create memorable experiences that bring people joy and celebration.
-        </p>
-        <div class="about-image-1">
-          <img id="" src="Images/public-meeting.png" alt="Pic of William Santo" />
+      </section>
+  
+      <section>
+        <div class="about-me-3">
+          <p>Customer-centric product design prioritizes the needs and desires of users at every stage of development. By integrating customer feedback and focused research, I ensure the products are both functional and delightful. This approach enhances usability, accessibility, and aesthetics, leading to higher user satisfaction and loyalty. Ultimately, this philosophy drives innovation and creates products that genuinely resonate with their intended audience.
+          </p>
+          <div class="about-image-3">
+            <img id="" src="Images/public-meeting.png" alt="Pic of William Santo" />
+          </div>
         </div>
-      </div>
-    </section>
-
-    <section>
-      <div>
-        <h2>NEWS</h2>
-        <p>Click here to explore our History page and discover how Event Simplified is continually revolutionizing the way events are planned and executed!</p>
-        <nav>
-          <a href="#">LEARN UP</a>
-        </nav>
-      </div>
+      </section>
+  
+      <section id="news">
+        <div class="intro-text">
+          <h2>NEWS</h2>
+          <p>Click here to explore our History page and discover how Event Simplified is continually revolutionizing the way events are planned and executed!</p>
+          <nav>
+            <a id="learn-up" href="events.html">LEARN UP</a>
+          </nav>
+        </div>
+      </section>
     </section>
   </main>
 
-  <footer class="site-footer">
-      
-    <div class="connected">
-      <h3>Stay Connected</h3>
-      <p>Join our community and stay in the loop with the latest updates,and exciting news! Simply fill out the form below to subscribe to our newsletter and be part of our vibrant community.</p>
-      <h4>EMAIL: INFO@EVENSIMPLIFIED</h4>
-      <h4>EVENT SIMPLIFIED</h4>
-    </div>
-    <div class="footer-logo">
-      <img id="logo-img-footer" src="./assets/icons/66-logo.svg">
-    </div>
-
-    <div id="app" class="contact-form">
-      <p class="form-key">Please fill the form <span class="required"></span></p>
-      <form @submit.prevent="submitForm" id="contactForm">
-        <label for="firstName">First Name: <span class="required"></span></label>
-        <input type="text" id="firstName" v-model="formData.firstName">
-
-        <label for="lastName">Last Name: <span class="required"></span></label>
-        <input type="text" id="lastName" v-model="formData.lastName">
-
-        <label for="email">Email: <span class="required"></span></label>
-        <input type="email" id="email" v-model="formData.email">
-
-        <label for="testAnswer">What is 4+4 (Type the number) <span class="required"></span></label>
-        <input type="text" id="testAnswer" v-model="formData.testAnswer">
-
-        <label for="message">Message: <span class="required"></span></label>
-        <textarea id="message" v-model="formData.message"></textarea>
-
-        <input type="text" id="honeypot" v-model="formData.honeypot">
-
-        <button :class="{ 'button__circle': submitted, 'button': true }" type="submit">
-          <div class="container">
-            <span class="tick" v-html="buttonText">Submit</span>
-          </div>
-        </button>
-
-        <ul v-if="errors">
-          <li v-for="error in errors">{{error}}</li>
-        </ul>
-        <div v-if="responseMessage">
-          {{ responseMessage }}
+  <footer class="footer-section">
+    <div class="containers">
+        <div class="footer-cta pt-5 pb-5">
+            <div class="row">
+                <div class="col-xl-4 col-md-4 mb-30">
+                    <div class="single-cta">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div class="cta-text">
+                            <h4>Find us</h4>
+                            <span>1010 Avenue, sw 54321, chandigarh</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-md-4 mb-30">
+                    <div class="single-cta">
+                        <i class="fas fa-phone"></i>
+                        <div class="cta-text">
+                            <h4>Call us</h4>
+                            <span>9876543210 0</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-md-4 mb-30">
+                    <div class="single-cta">
+                        <i class="far fa-envelope-open"></i>
+                        <div class="cta-text">
+                            <h4>Mail us</h4>
+                            <span>mail@info.com</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-      </form>
+        <div class="footer-content pt-5 pb-5">
+            <div class="row">
+                <div class="col-xl-4 col-lg-4 mb-50">
+                    <div class="footer-widget">
+                        <div class="footer-logo">
+                            <a href="index.html"><img src="assets/icons/ES-logo-1-white-long.png" class="img-fluid" alt="logo"></a>
+                        </div>
+                        <div class="footer-text">
+                          <h3>Stay Connected</h3>
+                          <p>Join our community and stay in the loop with the latest updates, and exciting news! Simply fill out the form below to subscribe to our newsletter and be part of our vibrant community.</p>
+                        </div>
+                        <div class="footer-social-icon">
+                            <span>Follow us</span>
+                            <a href="#"><i class="fab fa-facebook-f facebook-bg"></i></a>
+                            <a href="#"><i class="fab fa-twitter twitter-bg"></i></a>
+                            <a href="#"><i class="fab fa-google-plus-g google-bg"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-lg-4 col-md-6 mb-30">
+                    <div class="footer-widget">
+                      <div class="footer-widget-heading">
+                          <h3>Useful Links</h3>
+                      </div>
+                        <ul>
+                            <li><a href="index.html">HOME</a></li>
+                            <li><a href="events.html">EVENTS</a></li>
+                            <li><a href="history.html">HISTORY</a></li>
+                            <li><a href="about-me.html">ABOUT ME</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-lg-4 col-md-6 mb-50">
+                    <div class="footer-widget">
+                        <div class="footer-widget-heading">
+                            <h3>Subscribe</h3>
+                        </div>
+                        <div class="footer-text mb-25">
+                            <p>Don't miss to subscribe to our new feeds, kindly fill the form below.</p>
+                        </div>
+                        <div class="subscribe-form">
+                            <form action="#">
+                                <input type="text" placeholder="Email Address">
+                                <button><i class="fab fa-telegram-plane"></i></button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
+    <div class="copyright-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-6 col-lg-6 text-center text-lg-left">
+                    <div class="copyright-text">
+                        <p>Copyright &copy; 2024, All Right Reserved <a href="https://mohzrn.ca">Event Simplified</a></p>
+                    </div>
+                </div>
+                <div class="col-xl-6 col-lg-6 d-none d-lg-block text-right">
+                    <div class="footer-menu">
+                        <ul>
+                          <li><a href="index.html">HOME</a></li>
+                          <li><a href="events.html">EVENTS</a></li>
+                          <li><a href="history.html">HISTORY</a></li>
+                          <li><a href="about-me.html">ABOUT ME</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
 
-    <section class="grid-con">
-      <h2 class="hidden">Footer</h2>
-      <div id="line-foot" class="col-span-4 m-col-span-12 l-col-span-12 xl-col-span-12">
-        <ul class="menu-social">
-          <li>
-            <a href="https://twitter.com/FanshaweCollege?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor">
-              <img class="icons" src="Images/twitter.svg" alt="twitter">
-            </a>
-          </li>
-          <li>
-            <a href="https://www.facebook.com/FanshaweCollege/">
-              <img class="icons" src="Images/facebook.svg" alt="facebook">
-            </a>
-          </li>
-          <li>
-            <a href="https://www.youtube.com/@Fanshawe-College">
-              <img class="icons" src="Images/youtube.svg" alt="youtube">
-            </a>
-          </li>
-          <li>
-            <a href="https://www.instagram.com/fanshawecollege/?hl=en">
-              <img class="icons" src="Images/instagram.svg" alt="instagram">
-            </a>
-          </li>
-          <li>
-            <a href="https://www.linkedin.com/school/fanshawe-college/?originalSubdomain=ca">
-              <img class="icons" src="Images/linkedin-in.svg" alt="Linkedin">
-            </a>
-          </li>
-        </ul>
-      </div>
-    </section>
-  </footer>
-
+<script src="https://kit.fontawesome.com/82048953c6.js" crossorigin="anonymous"></script>
   <script src="js/main.js"></script>
 </body>
 
