@@ -1,0 +1,52 @@
+@media only screen and (min-width: 1025px) {
+
+        
+    .hero {
+        position: relative;
+        width: 75%;
+        margin: 0 auto;
+        display: flex;
+        height: 93 0px;
+    }
+    
+    .hero img {
+        margin-left: 3rem;
+        width: 544px;
+    }
+    .content {
+        position: relative;
+         top: 5rem;
+        padding: 2rem;
+        color: #fff;
+        max-width: 22rem;
+        h1 {
+            padding: 2rem 0;
+            font-size: 5.5rem;
+            font-weight: 300;
+        }
+        p {
+            width: 40rem;
+            font-size: 20px;
+        }
+    }
+
+    .about-me-1,
+    .about-me-2,
+    .about-me-3 {
+        display: flex;
+        margin: 0 auto;
+        width: 80%;
+        height: 930px;
+        align-items: center;
+        justify-content: space-around;
+        p {
+            padding: 0 2rem;
+            font-size: 18px;
+            width: 530px;
+        }
+        img {
+            width: 545px;
+        }
+    }
+    
+}

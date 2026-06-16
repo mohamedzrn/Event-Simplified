@@ -1,0 +1,77 @@
+// .arrow-wrapper {
+//   display: flex;
+//   align-items: center;
+// }
+
+// .arrow-wrapper:hover h1 {
+//   opacity: 1;
+// }
+
+// /***************
+//  * Arrow 1
+//  ***************/
+
+// #arrow_1 .arrow {
+//   $size: 30px;
+//   $width: 2px;
+
+//   cursor: pointer;
+//   display: block;
+//   width: $size / 1.414;
+//   height: $size / 1.414 * 2;
+//   position: relative;
+  
+//   & span,
+//   &:before,
+//   &:after {
+//     background: black;
+//     content: '';
+//     display: block;
+//     width: $size;
+//     height: $width;
+//     position: absolute;
+//     top: calc(50% - (#{$width} / 2));
+//   }
+    
+//   &:before {
+//     transform: rotate(-45deg);
+//   }
+//   &:after {
+//     transform: rotate(45deg);
+//   }
+  
+//   & span {
+//     width: 0;
+//   }
+//   &:hover span {
+//     width: $size * 1.414;
+//   }
+  
+//   @each $direction in 'left' 'right' {
+//     &.arrow--#{$direction} {
+//       & span,
+//       &:before,
+//       &:after {
+//         #{$direction}: 0;
+//         transform-origin: #{$direction} 50%;
+//       }
+
+//       &:before,
+//       &:after {
+//         transition: #{$direction} 0.3s 0.05s;
+//       }
+
+//       & span {
+//         transition: width 0.3s, #{$direction} 0.3s 0.05s;
+//       }
+
+//       &:hover {
+//         & span,
+//         &:before,
+//         &:after {
+//           #{$direction}: $size / 1.414 * -1;
+//         }
+//       }
+//     }
+//   }
+// }

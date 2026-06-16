@@ -1,0 +1,64 @@
+/* Additional styles for card banner and grid container */
+.card-banner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.grid-container {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 16px;
+    padding: 16px;
+    width: 80%;
+    box-sizing: border-box;
+}
+
+.card1,
+.card2,
+.card3,
+.card4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 16px;
+    background-color: rgb(255, 239, 210);
+    border: 5px solid orange;
+    padding: 20px;
+    text-align: center;
+    width: 256px;
+    height: 422px;
+    color: #666;
+    font-size: 13px;
+    line-height: 1.6;
+}
+
+#card h2 {
+    margin: 0;
+    padding: 16px 0;
+    color: #333;
+    font-size: 24px;
+}
+
+#card h5 {
+    font-size: 17px;
+}
+
+#card p {
+    color: #666;
+    font-size: 13px;
+    line-height: 1.6;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .grid-container {
+        width: 95%;
+        display: contents;
+    }
+}

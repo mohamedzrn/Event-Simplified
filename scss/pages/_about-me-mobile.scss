@@ -1,0 +1,51 @@
+@media only screen and (max-width: 768px) {
+
+    .hero{
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .content {
+        padding: 2rem 0;
+        color: #fff;
+        width: 22rem;
+        h1 {
+            padding: 2rem 0;
+            font-size: 5.5rem;
+            font-weight: 300;
+        }
+        p {
+            font-size: 25px;
+        }
+    }
+
+    .about-me-1,
+    .about-me-2,
+    .about-me-3 {
+        display: flex;
+        width: 90%;
+        margin: 0 auto;
+        padding: 3rem 0;
+        p {
+            padding: 2rem 0;
+            max-width: 29rem;
+            font-size: 24px;
+        }
+    }
+
+    .about-image-1 {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .about-me-1,
+    .about-me-3 {
+        flex-direction: column-reverse;
+    }
+
+    .about-me-2 {
+        flex-direction: column;
+    }
+
+
+}
